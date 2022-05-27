@@ -9,29 +9,13 @@ function App() {
 
   async function getUser(e) {
     e.preventDefault()
-    fetch(`https://api.github.com/users/${username}`)
+    await fetch(`https://api.github.com/users/${username}`)
       .then(data => data.json())
       .then(data => setUserData(data))
       .catch(() => window.alert(' Erro inesperado! \nVerifique sua conexão.'))
 
-    await getUserRepos()
-    console.log(userData)
   }
 
-
-  function getUserRepos() {
-    fetch(userData.repos_url)
-      .then(data => data.json())
-      .then(repos => {
-        let reposArray = []
-        repos.forEach(item => {
-          reposArray.push(item)
-        });
-        setUserData(() => userData.repos = reposArray)
-      })
-
-
-  }
 
   return (
     <main>

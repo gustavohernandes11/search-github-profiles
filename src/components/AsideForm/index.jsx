@@ -11,7 +11,7 @@ export default function AsideForm(props) {
             <h1>ApiGithubProfiles</h1>
             <p>Digite um <b>username</b> para buscar informações do perfil.</p>
             <form action="none">
-                <input type="text" placeholder="username..." autoComplete="false" onChange={props.onChange} />
+                <input type="text" placeholder="username..." autoComplete="false" defaultValue="" onChange={props.onChange} />
                 <button onClick={props.onClick}>Buscar</button>
             </form>
         </div>
