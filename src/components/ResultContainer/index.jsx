@@ -4,7 +4,7 @@ import RepoCard from './RepoCard'
 
 export default function ResultContainer(props) {
     const [user, setUser] = useState({})
-    const [repos, setRepos] = useState([])
+    const [repos, setRepos] = useState()
 
     useEffect(() => {
         setUser(props.userData)
@@ -45,8 +45,8 @@ export default function ResultContainer(props) {
                         {user.bio ? (<hr />) : null}
 
                         <div className="resultrepos">
-                           {repos ? <h3>Lista de Repositórios:</h3> : null}
-                            {repos.map(e => <RepoCard key={e.name} name={e.name} url={e.html_url}/>)}
+                           {repos && <h3>Lista de Repositórios:</h3> }
+                            {repos && repos.map(e => <RepoCard key={e.name} name={e.name} url={e.html_url}/>)}
                         </div>
                     </>
                 )}

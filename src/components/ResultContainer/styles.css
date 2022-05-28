@@ -12,8 +12,9 @@
 .resultheader {
     display: flex;
     flex-direction: row;
-    background-color: rgb(223, 223, 223);
+    background-color: transparent;
     border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.048);
 
 }
@@ -46,9 +47,10 @@
     justify-content: space-between;
     padding: 5px 15px;
     margin-top: 5px;
-    background-color: rgb(223, 223, 223);
-    border-radius: 5px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.096);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.356);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.048);
 
 }
 
@@ -66,36 +68,35 @@
     align-items: center;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 700px) {
     .resultcontainer {
         flex-grow: 4;
         width: 100%;
         padding: 20px;
-        
-        display: column;
-        flex-direction: row;
+
+        display: flex;
+        flex-direction: column;
         overflow-y: auto;
     }
+
     .resultheader {
         flex-direction: column;
         align-items: center;
 
-        background-color: transparent;
-        border-radius: 10px;
-        border: 1px solid rgba(128, 128, 128, 0.356);
-        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.048);
     }
+
     .resultcontainer img {
         border-radius: 999px;
 
     }
+
     .repocard {
-        
+
         background-color: transparent;
         border-radius: 10px;
         border: 1px solid rgba(128, 128, 128, 0.356);
         box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.048);
     }
-    
-  
-  }
+
+
+}

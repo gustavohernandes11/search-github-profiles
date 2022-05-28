@@ -1,26 +1,32 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import './styles.css'
 import gitImage from '../../assets/imgs/pngwing.com.png'
 
-export default function AsideForm({inSearch, onClick, onChange}) {
-
+export default function AsideForm({ inSearch, onClick, onChange }) {
+    const [isSearchMode, setIsSearchMode] = useState();
+    useEffect(() => {
+        setIsSearchMode(inSearch)
+    }, [inSearch])
 
     return (
         <div className="asideform">
-            <span>
-            <img src={gitImage} alt="Logo da página" />
-            <h1>ApiGithubProfiles</h1>
+            <span style={{flexDirection: isSearchMode  ? 'row' : 'column', alignItems: 'center', justifyContent: 'center'}} >
+                <img src={gitImage} alt="Logo da página" />
+                <h1 style={{fontSize: isSearchMode || window.screen.width < 700 ? 'inherit' : '30px'}}>ApiGithubProfiles</h1>
             </span>
-            <p>Digite um <b>username</b> para buscar informações do perfil.</p>
+            {!isSearchMode && (
+                <p >Digite um <b>username</b> para buscar informações do perfil.</p>
+            )}
             <form action="none">
                 <input type="text" placeholder="Username..." autoComplete="false" spellCheck="false" defaultValue="" onChange={onChange} />
                 <button onClick={onClick}>Buscar</button>
             </form>
             <hr />
-            <p>Sem ideia? Tente algum destes:</p>
-            <span>
-            <b>twitter, facebook, instagram</b>
-            </span>
+            {!isSearchMode && (
+                    <p className="helptext">Exemplo: facebook, twitter, microsoft...</p>
+            )}
+
+
         </div>
     )
 }

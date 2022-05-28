@@ -13,6 +13,7 @@ function App() {
     await fetch(`https://api.github.com/users/${username}`)
       .then(data => data.json())
       .then(data => setUserData(data))
+      .then(setInSearch(true))
       .catch(() => window.alert(' Erro inesperado! \nVerifique sua conexão.'))
 
   }
