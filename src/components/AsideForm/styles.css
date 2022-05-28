@@ -15,6 +15,7 @@
 
     transition: ease-in-out 0.5s;
 }
+
 .asideform img {
     width: 100px;
 }
@@ -30,9 +31,71 @@
 }
 .asideform button {
     background-color: #121212;
-    margin: 10px;
+    margin: 5px;
     color: white;
 }
 .asideform button:hover {
     cursor: pointer;
 }
+.asideform span {
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 900px) {
+    .asideform {
+        flex-wrap: wrap;
+
+        padding: 5px;
+        /* min-height: 60px; */
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .asideform input {
+        height: 100%;
+        margin: 5px;
+        flex-grow: 1;
+
+    }
+    .asideform button {
+        flex-grow: 1;
+    }
+    .asideform img {
+        width: 40px;
+    }
+    .asideform p, b {
+        display: none;
+    }
+    .asideform hr{
+        display: none;
+    }
+    form {
+        display: flex;
+        padding: 0px 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    h1 {
+        font-size: 1rem;
+        margin: 10px;
+    }
+  
+  }
+
+/* @media only screen and (max-width: 600px) {
+    .asideform {
+        flex-wrap: wrap;
+        padding: 10px;
+        height: 60px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .asideform p,.asideform b {
+        display: flex;
+        margin: 0px 5px;
+    }
+} */

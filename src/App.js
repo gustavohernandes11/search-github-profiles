@@ -6,6 +6,7 @@ import ResultContainer from './components/ResultContainer'
 function App() {
   const [username, setUsername] = useState(null)
   const [userData, setUserData] = useState(null)
+  const [inSearch, setInSearch] = useState(false)
 
   async function getUser(e) {
     e.preventDefault()
@@ -19,7 +20,7 @@ function App() {
 
   return (
     <main>
-      <AsideForm onChange={(e) => setUsername(e.target.value)} onClick={getUser} />
+      <AsideForm inSearch={inSearch} onChange={(e) => setUsername(e.target.value)} onClick={getUser} />
       {userData ? (<ResultContainer userData={userData} />) : (null)}
     </main>
   );

@@ -6,7 +6,7 @@ export default function RepoCard(props) {
 
         <div className="repocard">
             <p>{props.name}</p> 
-            <span><a target="_blank" href={props.url}>Ver</a></span>
+            <span><a target="_blank" href={props.url}>Ver código</a></span>
             </div>
     )
 }
