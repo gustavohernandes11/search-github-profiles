@@ -9,7 +9,7 @@ export default function AsideForm({ inSearch, onClick, onChange }) {
     }, [inSearch])
 
     return (
-        <div className="asideform">
+        <div className="asideform" style={{justifyContent: isSearchMode ? 'center' : 'space-around', alignItems: isSearchMode ? 'center' : '', padding: isSearchMode ? '10px' : ''}}>
             <span style={{flexDirection: isSearchMode  ? 'row' : 'column', alignItems: 'center', justifyContent: 'center'}} >
                 <img src={gitImage} alt="Logo da página" />
                 <h1 style={{fontSize: isSearchMode || window.screen.width < 700 ? 'inherit' : '30px'}}>ApiGithubProfiles</h1>
