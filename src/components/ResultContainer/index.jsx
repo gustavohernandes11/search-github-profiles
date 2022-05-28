@@ -46,7 +46,12 @@ export default function ResultContainer(props) {
 
                         <div className="resultrepos">
                            {repos && <h3>Lista de Repositórios:</h3> }
-                            {repos && repos.map(e => <RepoCard key={e.name} name={e.name} url={e.html_url}/>)}
+                            {repos && repos.map(e => <RepoCard 
+                            key={e.name} 
+                            name={e.name} 
+                            description={e.description} 
+                            url={e.html_url}
+                            />)}
                         </div>
                     </>
                 )}

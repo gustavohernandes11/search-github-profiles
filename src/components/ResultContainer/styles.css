@@ -45,7 +45,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px 15px;
+    padding:  15px;
     margin-top: 5px;
     background-color: transparent;
     border-radius: 10px;
@@ -58,7 +58,11 @@
     text-decoration: none;
     color: black;
 }
-
+.repocard button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.568);
+}
 .error {
     display: flex;
     flex-direction: column;

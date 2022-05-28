@@ -5,8 +5,11 @@ export default function RepoCard(props) {
     return (
 
         <div className="repocard">
-            <p>{props.name}</p> 
-            <span><a target="_blank" href={props.url}>Ver código</a></span>
+            <span>
+            <b>{props.name}</b> 
+            <p>{props.description}</p>
+            </span>
+            <button><a target="_blank" href={props.url}>Ver código</a></button>
             </div>
     )
 }
