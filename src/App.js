@@ -15,9 +15,7 @@ function App() {
       .then(data => setUserData(data))
       .then(setInSearch(true))
       .catch(() => window.alert(' Erro inesperado! \nVerifique sua conexão.'))
-
   }
-
 
   return (
     <main>

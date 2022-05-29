@@ -18,8 +18,8 @@ export default function AsideForm({ inSearch, onClick, onChange }) {
                 <p >Digite um <b>username</b> para buscar informações do perfil.</p>
             )}
             <form action="none">
-                <input type="text" placeholder="Username..." autoComplete="false" spellCheck="false" defaultValue="" onChange={onChange} />
-                <button onClick={onClick}>Buscar</button>
+                <input type="text" aria-label="forminput" placeholder="Username..." autoComplete="false" spellCheck="false" defaultValue="" onChange={onChange} />
+                <button aria-label="formbutton" onClick={onClick}>Buscar</button>
             </form>
             <hr />
             {!isSearchMode && (

@@ -12,7 +12,6 @@ export default function ResultContainer(props) {
     
     useEffect(()=> {
         getUserRepos()
-        console.log(repos)
     }, [user])
 
 
@@ -28,7 +27,7 @@ export default function ResultContainer(props) {
             <div className="resultcontainer">
                 {user.message ? (<div className="error"><b>Usuário não encontrado</b><p>Tente outro username ou verifique sua conexão.</p></div>) : (
                     <>
-                        <div className="resultheader">
+                        <div className="resultheader" aria-label="resultheader">
                             <img src={user.avatar_url} alt="" className="avatar" />
                             <span>
                                 <h2>{user.name}</h2>
