@@ -9,10 +9,10 @@ export default function AsideForm({ inSearch, onClick, onChange }) {
     }, [inSearch])
 
     return (
-        <div className="asideform" style={{justifyContent: isSearchMode ? 'center' : '', alignItems: isSearchMode ? 'center' : '', padding: isSearchMode ? '10px' : '100px'}}>
-            <span style={{flexDirection: isSearchMode  ? 'row' : 'column', alignItems: 'center', justifyContent: 'center'}} >
+        <div className="asideform" style={{ justifyContent: isSearchMode ? 'center' : '', alignItems: isSearchMode ? 'center' : '', padding: isSearchMode ? '10px' : '100px' }}>
+            <span style={{ flexDirection: isSearchMode ? 'row' : 'column', alignItems: 'center', justifyContent: 'center' }} >
                 <img src={gitImage} alt="Logo da página" />
-                <h1 style={{fontSize: isSearchMode || window.screen.width < 700 ? 'inherit' : '30px'}}>ApiGithubProfiles</h1>
+                <h1 style={{ fontSize: isSearchMode || window.screen.width < 700 ? 'inherit' : '30px' }}>ApiGithubProfiles</h1>
             </span>
             {!isSearchMode && (
                 <p >Digite um <b>username</b> para buscar informações do perfil.</p>
@@ -23,7 +23,7 @@ export default function AsideForm({ inSearch, onClick, onChange }) {
             </form>
             <hr />
             {!isSearchMode && (
-                    <p className="helptext">Exemplo: facebook, twitter, microsoft...</p>
+                <p className="helptext">Exemplo: facebook, twitter, microsoft...</p>
             )}
 
 
