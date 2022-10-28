@@ -1,26 +1,23 @@
-html, body,main, #root {
-margin: 0px;  
-min-height: 100vh;
-width: 100vw;
-overflow-y: hidden;
-height: 100vh;
+:root {
+  --main-bg-color: #202020;
+  --gradient-bg-color: linear-gradient(90deg, hsla(294, 46%, 39%, 1) 0%, hsla(271, 40%, 43%, 1) 100%);  
+  --secondary-bg-color: hsla(294, 46%, 39%, 1);
+}
 
+html, body,main, #root {
+  font-family: 'Quicksand', sans-serif;
+  margin: 0px;  
+  min-height: 100vh;
+  width: 100vw;
+  overflow-y: hidden;
+  height: 100vh;
+
+}
+body {
+  background: var(--main-bg-color);
 }
 
 * {
   box-sizing: border-box;
 }
-main {
-  display: flex;
-  flex-direction: row;
-}
-@media only screen and (max-width: 1000px) {
-  main {
-    display: flex;
-    flex-direction: column;
-
-  }
-
-}
-
 

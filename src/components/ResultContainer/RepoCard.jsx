@@ -9,7 +9,7 @@ export default function RepoCard(props) {
             <b>{props.name}</b> 
             <p>{props.description}</p>
             </span>
-            <button><a target="_blank" href={props.url}>Ver código</a></button>
+            <button><a rel="noreferrer" target="_blank" href={props.url}>Ver código</a></button>
             </div>
     )
 }

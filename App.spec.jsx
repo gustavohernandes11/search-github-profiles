@@ -40,7 +40,6 @@ describe('testing the main component', () => {
         const button = screen.getByLabelText(/formbutton/i)
         userEvent.type(input, 'facebook')
         userEvent.click(button)
-        debug(screen)
 
         const headerresult = screen.getByLabelText(/resultheader/i)
         // expect(headerresult).toBeInTheDocument()
