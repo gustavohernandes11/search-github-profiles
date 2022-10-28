@@ -1,5 +1,5 @@
-import { Github } from '@styled-icons/feather'
+import { Github } from "@styled-icons/feather";
 
 export const GithubLogo = () => {
-    return <Github size={50} />
-}
+  return <Github size={50} />;
+};

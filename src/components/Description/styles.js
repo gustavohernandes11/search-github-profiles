@@ -1,6 +1,7 @@
-import styled, {css} from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Paragraph = styled.p`
-${({align}) => css`
-text-align: ${align}`};
+  ${({ align }) => css`
+    text-align: ${align};
+  `};
 `;
