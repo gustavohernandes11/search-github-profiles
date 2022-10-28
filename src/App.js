@@ -31,6 +31,7 @@ function App() {
     .finally(setLoadingProfile(() => false))
     .then(r => setData(r))
     .then(() => router.navigate("/search"))
+    .then(() => setInputUserName(''))
 
 }
 
