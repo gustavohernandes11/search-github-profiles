@@ -1,10 +1,10 @@
 <h1 align="center"> Search github profiles </h1>
-<p align="center">Uma página que busca por perfis do Github. <a href="https://searchprofilesgithub.netlify.app/">Veja online</a>.</p>
+<p align="center">Uma página que busca por perfis do Github. <a href="https://searchprofilesgithub-v2.netlify.app/">Veja online</a>.</p>
 
 
 <span align="center"> 
 
-![Search Profiles App Picture](https://user-images.githubusercontent.com/66632840/186954665-4ad516b1-88ad-43f3-8a32-d4a1e996079a.jpeg)
+![Express_Github_Profile](https://user-images.githubusercontent.com/66632840/198719073-b083fdd3-9ec0-4cb1-99d9-1b61549de60e.jpeg)
 
 </span>
 
@@ -15,6 +15,7 @@
 ![Netlify](https://img.shields.io/badge/netlify-%23000000.svg?style=for-the-badge&logo=netlify&logoColor=#00C7B7) 
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white) 
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) 
+![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 
 
 
@@ -22,3 +23,5 @@
 ## Aprendizado
 - Requisição e tratamento de dados de api de terceiros.
 - Layout responsivo.
+- Refatoração de código antigo.
+- Melhores noções de design.
