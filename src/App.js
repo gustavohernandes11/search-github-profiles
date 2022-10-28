@@ -4,7 +4,6 @@ import { getProfile } from './api';
 
 import { HomePage } from './pages/HomePage'
 import { ResultPage } from './pages/ResultPage'
-import { NotFound } from './components/NotFound';
 
 import {
   createBrowserRouter,
@@ -48,10 +47,6 @@ function App() {
     path: "/search",
     element: <ResultPage profileData={data} />,
   },
-  {
-    path: "/404",
-    element: <NotFound />,
-  }
 ]);
 
 
